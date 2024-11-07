@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "e-Ukraine-Regular";
+  src: url("/assets/fonts/e-Ukraine-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "e-Ukraine-Bold";
+  src: url("/assets/fonts/e-Ukraine-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #e2dfcc;
+}
+
+body,
+div,
+p,
+a,
+button {
+  font-family: "e-Ukraine-Regular", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "e-Ukraine-Bold", sans-serif;
+}

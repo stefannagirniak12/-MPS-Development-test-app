@@ -1,0 +1,19 @@
+<div class="point-form">
+    <label>
+        Широта:
+      <input type="text" [(ngModel)]="point.latitude" />
+    </label>
+    <label>
+      Довгота:
+      <input type="text" [(ngModel)]="point.longitude" />
+    </label>
+    <label>
+      Висота:
+      <input type="text" [(ngModel)]="point.height" />
+    </label>
+    <div class="actions">
+      <button class="delete-button" (click)="onDelete()">Видалити</button>
+      <button class="save-button" (click)="onSave()">Зберегти</button>
+    </div>
+  </div>
+  

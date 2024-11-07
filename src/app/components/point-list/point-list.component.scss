@@ -1,0 +1,96 @@
+.point-list {
+  width: 400px;
+  border: 1px solid #332f21;
+  padding: 6px 4px;
+  border-radius: 8px;
+  height: calc(84vh - 56px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 3.5px;
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #fb890e;
+    border-radius: 3.5px;
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #ab5901;
+    cursor: pointer;
+  }
+
+  @media (max-width: 900px) {
+    height: auto;
+    width: 90vw;
+  }
+}
+
+.list-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+th,
+td {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    text-align: center;
+    border: 1px solid #332f21;
+  }
+
+  th {
+    background-color: #f4f4f4;
+  }
+}
+
+.button-wrapper {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.send-button {
+  background-color: #fb890e;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #ab5901;
+  }
+}
+
+.reset-button {
+  background-color: #332f21;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #000;
+  }
+}

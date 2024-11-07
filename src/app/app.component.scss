@@ -1,0 +1,17 @@
+.app-container{
+    background-color: #e2dfcc;
+    min-height: 100vh;
+}
+
+.main-wrapper{
+    margin: 24px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+    @media (max-width: 900px) {
+       flex-direction: column-reverse;
+       align-items: center;
+    }
+}

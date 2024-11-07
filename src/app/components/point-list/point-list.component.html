@@ -1,0 +1,32 @@
+<section class="main-wrapper">
+  <div class="point-list">
+    <h2 class="list-title">Список точок</h2>
+    <table *ngIf="points.length > 0">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Широта</th>
+          <th>Довгота</th>
+          <th>Висота</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let point of points">
+          <td>{{ point.number }}</td>
+          <td>{{ point.latitude }}</td>
+          <td>{{ point.longitude }}</td>
+          <td>{{ point.height }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p *ngIf="points.length === 0">Точки маршруту відсутні</p>
+  </div>
+
+  <div class="button-wrapper">
+    <button (click)="resetPoints()" class="reset-button">Очистити</button>
+    <button (click)="sendPointsToServer()" class="send-button">
+      Відправити
+    </button>
+  </div>
+</section>
