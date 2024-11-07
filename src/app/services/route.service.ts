@@ -55,6 +55,7 @@ export class RouteService {
     this.http.post(mockServerUrl, pointsData, { headers }).pipe(take(1)).subscribe({
       next: (response) => {
         console.log('Data sent successfully to server:', response);
+        this.resetPoints();
       },
       error: (error) => {
         console.error('Error sending data to server:', error);
